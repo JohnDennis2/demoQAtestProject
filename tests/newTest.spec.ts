@@ -5,6 +5,6 @@ test.beforeEach('navigate to page', async({page}) => {
 })
 
 test('Textbox', async ({page}) => {
-    const textBoxform = page.locator('avatar mr-sm-2')
+    const textBoxform = page.locator('.element-list')
     await textBoxform.click()
 })
