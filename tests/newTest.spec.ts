@@ -5,6 +5,6 @@ test.beforeEach('navigate to page', async({page}) => {
 })
 
 test('Textbox', async ({page}) => {
-    const textBoxform = page.locator('.category-cards .card .mt-4 .top-card ')
+    const textBoxform = page.getByText('elements')
     await textBoxform.click()
 })
