@@ -7,4 +7,5 @@ test.beforeEach('navigate to page', async({page}) => {
 test('Textbox', async ({page}) => {
     const textBoxform = page.getByText('elements')
     await textBoxform.click()
+    await page.locator('.text', {hasText: "Text"}).fill('john@hotmail.com')
 })
